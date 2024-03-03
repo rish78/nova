@@ -41,7 +41,6 @@ const ConversationPage = ()=> {
 
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try{
-            throw new Error("Something")
             const response = await axios.post("/api/conversation", {
                 
                 message: values.prompt,
